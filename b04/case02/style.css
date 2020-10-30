@@ -1,0 +1,113 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1170px;
+  background-color: pink;
+  padding: 100px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 
+
+Chia rõ ràng ứng dụng có 2 dạng class 
+1. Nhóm class dùng chung (Dành cho việc chia column, ...)
+2. Nhóm class riêng của giao diện từng phần
+  (
+    Danh sách bài viết -> list-news 
+    Danh sách sản phẩm -> list-product
+  )
+
+*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.row:not([class*="gutters-"]) {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row:not([class*="gutters-"]) > [class*="col-"] {
+  padding: 15px;
+}
+
+.row.gutters-20 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.row.gutters-20 > [class*="col-"] {
+  padding: 10px;
+}
+
+.row.gutters-10 {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.row.gutters-10 > [class*="col-"] {
+  padding: 5px;
+}
+
+.row .col-1 {
+  width: 8.333%;
+}
+.row .col-2 {
+  width: 16.666%;
+}
+.row .col-3 {
+  width: 25%;
+}
+.row .col-4 {
+  width: 33.3333%;
+}
+.row .col-6 {
+  width: 50%;
+}
+.row .col-9 {
+  width: 75%;
+}
+.row .col-12 {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  /* Desktop first */
+  .row .col-3 {
+    width: 33.3333%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Desktop first */
+  .row .col-3 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  /* Desktop first */
+  .row .col-3 {
+    width: 100%;
+  }
+}
+
+.product {
+  background-color: aqua;
+}
+
+.list-product {
+  margin-bottom: 100px;
+  background-color: red;
+}
+
+
+.banner {
+  background-size: cover;
+  background-image: url("https://images.ctfassets.net/hrltx12pl8hq/6bi6wKIM5DDM5U1PtGVFcP/1c7fce6de33bb6575548a646ff9b03aa/nature-photography-pictures.jpg?fit=fill&w=800&h=300");
+}

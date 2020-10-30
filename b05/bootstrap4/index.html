@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
+
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="box bg-dark">Tooltip on bottom</div>
+    </div>
+
+    <div class="container">
+      <nav class="my-menu navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="logo" href="#">
+          <img src="https://cdn.printgo.vn/uploads/file-logo/1/512x512.a8de660d3bb0c8cceb4769b9bdb92e00.ai.1.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-login">Login</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-12 col-sm-8 col-lg-9">
+        <div class="content">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem et veniam assumenda, necessitatibus
+            magni nostrum, odit dolores laudantium rerum saepe expedita natus, enim voluptatibus vitae ex perspiciatis
+            deserunt! Cum, architecto?</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem et veniam assumenda, necessitatibus
+            magni nostrum, odit dolores laudantium rerum saepe expedita natus, enim voluptatibus vitae ex perspiciatis
+            deserunt! Cum, architecto?</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem et veniam assumenda, necessitatibus
+            magni nostrum, odit dolores laudantium rerum saepe expedita natus, enim voluptatibus vitae ex perspiciatis
+            deserunt! Cum, architecto?</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem et veniam assumenda, necessitatibus
+            magni nostrum, odit dolores laudantium rerum saepe expedita natus, enim voluptatibus vitae ex perspiciatis
+            deserunt! Cum, architecto?</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 col-lg-3">
+        <div class="sidebar">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente a quod illo aperiam, quos tenetur dolore
+            harum error ut dolorem blanditiis sunt nobis architecto fugit alias perferendis asperiores explicabo
+            dolorum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- .modal.fade .modal-dialog -->
+  <div id="form-login" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div> -->
+        <div class="modal-body">
+          <form>
+            <div class="row">
+              <div class="col-8">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="d-flex justify-content-between">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-info">Cancel</button>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</body>
+<!-- Thứ tự khai báo -->
+<script src="libs/jquery/jquery-3.5.1.js"></script>
+
+<script src="libs/jquery/popper.min.js"></script>
+
+<script src="libs/bootstrap4/js/bootstrap.js"></script>
+
+<!-- Files javascript mình tự viết - Tạm thời bỏ qua -->
+
+</html>
+<!-- Trang Web -> Sử dụng thư viện bootstrap -> Sử dụng thư viện jQuery -->

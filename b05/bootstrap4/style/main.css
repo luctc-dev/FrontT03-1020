@@ -1,0 +1,24 @@
+.content {
+  background-color: aqua;
+}
+
+.sidebar {
+  background-color: brown;
+}
+
+
+.my-menu .logo img {
+  max-width: 100px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.box {
+  color: #fff;
+  border-radius: 7px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+/* before, after */
