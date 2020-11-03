@@ -219,7 +219,7 @@
   }
 
   .header-main__btn-mobile {
-    display: none;
+    display: block;
   }
   .header-main__btn-mobile .line {
     width: 35px;
@@ -237,7 +237,6 @@
   .header-main__btn-mobile:hover .line:nth-child(2) {
     opacity: 0;
   }
-  /* .header-main__btn-mobile:hover .line:nth-child(3) */
   .header-main__btn-mobile:hover .line:last-child {
     transform: translateY(-10px) rotate(-45deg);
   }
