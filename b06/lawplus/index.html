@@ -6,8 +6,10 @@
   <title>Project Law Plus</title>
 
   <!-- Khai báo font chữ - font icon -->
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap">
 
   <!-- Khai báo những CSS của thư viện bên ngoài (nếu có) -->
 
@@ -59,6 +61,11 @@
       <nav class="header-main">
         <div class="container">
           <div class="header-main__wrapper">
+            <div class="header-main__btn-mobile">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
             <div class="logo">
               <img src="http://wp.swlabs.co/lawplus/wp-content/uploads/2016/12/Logo.png" alt="">
             </div>
@@ -89,9 +96,21 @@
     <main>
       
       <div class="slider">
-        <div class="container">
-
+        <div class="slider-item">
+          <div class="slider-item__image">
+            <img src="http://wp.swlabs.co/lawplus/wp-content/uploads/revslider/home-page-01/slider-home-1.png" alt="">
+          </div>
+          <div class="slider-item__content">
+            <h2 class="slider-item__title">THE GREATEST FIRM YOU CAN TRUST</h2>
+            <p class="slider-item__sub-title">THE GREATEST FIRM YOU CAN TRUST</p>
+            <div class="slider-item__btns">
+              <button class="btn btn-size--medium btn-uppercase btn-secondary">Read more</button>
+              <button class="btn btn-size--medium btn-uppercase btn-light">Purchase Now</button>
+            </div>
+          </div>
         </div>
+        <button class="slider-btn slider-btn__prev"><span class="ion-chevron-left"></span></button>
+        <button class="slider-btn slider-btn__next"><span class="ion-chevron-right"></span></button>
       </div>
 
       <div class="intro-team">
